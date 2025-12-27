@@ -1,0 +1,782 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>LupusSeiza46' Portfolio</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- Aurora Effect (Dark Mode) -->
+<div class="aurora">
+  <div class="aurora-line"></div>
+  <div class="aurora-line"></div>
+  <div class="aurora-line"></div>
+  <div class="aurora-line"></div>
+  <div class="aurora-line"></div>
+</div>
+
+<!-- Clouds Effect (Light Mode) -->
+<div class="clouds">
+  <div class="cloud cloud-1"></div>
+  <div class="cloud cloud-2"></div>
+  <div class="cloud cloud-3"></div>
+  <div class="cloud cloud-4"></div>
+  <div class="cloud cloud-5"></div>
+</div>
+
+<!-- Navigation Bar -->
+<div class="nav">
+  <div class="container inner">
+    <a class="brand" href="#home"><span class="dot"></span>LupusSeiza46</a>
+
+    <!-- Mobile Hamburger Menu -->
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- Navigation Links -->
+    <div class="links">
+      <a href="#home">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+
+      <!-- Theme Toggle Button -->
+      <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Navigation Overlay -->
+  <div class="nav-overlay"></div>
+</div>
+
+<!-- Main Content -->
+<div class="container">
+
+  <!-- HOME SECTION -->
+  <section id="home" class="hero centered">
+    <div>
+      <h1>Welcome to My Portfolio</h1>
+      <p><i>"I will make the stars align."</i></p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center">
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="page-section">
+    <div class="about-card">
+      <div class="about-header">
+        <div class="about-photo">
+          <img src="assets/LupArt.jpg" alt="LupusSeiza46"/>
+          <span class="sparkle sparkle-1"></span>
+          <span class="sparkle sparkle-2"></span>
+          <span class="sparkle sparkle-3"></span>
+          <span class="sparkle sparkle-4"></span>
+        </div>
+        <div class="about-header-text">
+          <h2>Hi! I'm LupusSeiza46</h2>
+          <p class="about-intro">A passionate Visual Novel Developer specializing in Ren’Py game development. I also assist in designing for UI/UX, programming custom game mechanics, and help in polishing visual novels.'</p>
+        </div>
+      </div>
+
+      <div class="about-section">
+        <h3>What I Do</h3>
+        <div class="about-grid-new">
+          <div class="about-item">
+            <div class="about-icon">🎮</div>
+            <div class="about-text">
+              <h4>Visual Novel Development</h4>
+              <p>Creating immersive visual novels with Ren'Py, Unity and Godot, featuring custom mechanics and engaging features.</p>
+            </div>
+          </div>
+          <div class="about-item">
+            <div class="about-icon">🎨</div>
+            <div class="about-text">
+              <h4>Game Testing and Feedbacking</h4>
+              <p>I can also play test game and provide detailed feedbackst to improve gameplay, narrative, and user experience.</p>
+            </div>
+          </div>
+          <div class="about-item">
+            <div class="about-icon">🐍</div>
+            <div class="about-text">
+              <h4>Game Development</h4>
+              <p>Can also build games outside of Renpy!</p>
+            </div>
+          </div>
+          <div class="about-item">
+            <div class="about-icon">✨</div>
+            <div class="about-text">
+              <h4>Creative Direction</h4>
+              <p>Guiding projects from concept to completion with attention to detail and player experience.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="page-section">
+    <div class="section-header">
+      <h1>Projects</h1>
+      <div class="section-underline"></div>
+    </div>
+
+    <div class="projects-grid">
+      <!-- PROJECT 1: To Find Yourself -->
+      <div class="project-card">
+        <div class="project-card-image">
+          <span class="status-badge completed">Published</span>
+          <img src="assets/VN (2).png" alt="To Find Yourself preview"/>
+        </div>
+        <div class="project-card-content">
+          <h3 class="project-card-title">To Find Yourself</h3>
+          <p class="project-card-desc">Enter the world of Haikou, a place where magic and technology meet, and where deities and spirits live in harmony alongside humanity.</p>
+          <p class="project-card-author">Created by: <span>Meikame3</span></p>
+          <div class="project-card-tags">
+            <span class="tech-tag">Ren'Py</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">UI Design</span>
+          </div>
+          <a class="project-card-btn" href="https://meikame3.itch.io/to-find-yourself" target="_blank" rel="noopener">
+            <i class="fas fa-external-link-alt"></i> View on Itch.io
+          </a>
+        </div>
+      </div>
+
+      <!-- PROJECT 2: Nowheres' End -->
+      <div class="project-card">
+        <div class="project-card-image">
+          <span class="status-badge completed">Published</span>
+          <img src="assets/VN (1).png" alt="Nowheres' End preview"/>
+        </div>
+        <div class="project-card-content">
+          <h3 class="project-card-title">Nowheres' End</h3>
+          <p class="project-card-desc">The First Well, a gateway to another world, changed everything when it appeared, crashing into and swallowing a whole town.</p>
+          <p class="project-card-author">Created by: <span>Centipedeking</span></p>
+          <div class="project-card-tags">
+            <span class="tech-tag">Ren'Py</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">UI Design</span>
+          </div>
+          <a class="project-card-btn" href="https://centipedeking.itch.io/nowheres-end" target="_blank" rel="noopener">
+            <i class="fas fa-external-link-alt"></i> View on Itch.io
+          </a>
+        </div>
+      </div>
+
+      <!-- PROJECT 3: Purrgatory Cafe -->
+      <div class="project-card">
+        <div class="project-card-image">
+          <span class="status-badge completed">Published</span>
+          <img src="assets/VN (3).png" alt="Purrgatory Cafe preview"/>
+        </div>
+        <div class="project-card-content">
+          <h3 class="project-card-title">Purrgatory Cafe</h3>
+          <p class="project-card-desc">An average cat was bestowed with the powers of the dead. In order to get his memories back, he must reap all the souls in the mortal realm. If that wasn't enough for him, he must balance taking souls with taking orders at a cafe.</p>
+          <p class="project-card-author">Created by: <span>Chat Cat</span></p>
+          <div class="project-card-tags">
+            <span class="tech-tag">Ren'Py</span>
+            <span class="tech-tag">Play Tester</span>
+          </div>
+          <a class="project-card-btn" href="https://latenightdraw.itch.io/purgatory-cafe" target="_blank" rel="noopener">
+            <i class="fas fa-external-link-alt"></i> View on Itch.io
+          </a>
+        </div>
+      </div>
+
+      <!-- PROJECT 4: Distant Hollows -->
+      <div class="project-card">
+        <div class="project-card-image">
+          <span class="status-badge in-progress">In Development</span>
+          <img src="assets/VN(4).jpg" alt="Distant Hollows preview"/>
+        </div>
+        <div class="project-card-content">
+          <h3 class="project-card-title">Distant Hollows</h3>
+          <p class="project-card-desc">Follow the story of Tom as he navigates his feelings in space and in people.</p>
+          <p class="project-card-author">Created by: <span>RapsleRoon</span></p>
+          <div class="project-card-tags">
+            <span class="tech-tag">Ren'Py</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Play Tester</span>
+          </div>
+          <a class="project-card-btn disabled" href="#" onclick="return false;">
+            <i class="fas fa-clock"></i> Coming Soon
+          </a>
+        </div>
+      </div>
+
+      <!-- PROJECT 5: Deminisis -->
+      <div class="project-card">
+        <div class="project-card-image">
+          <span class="status-badge in-progress">In Development</span>
+          <img src="assets/VN (5).png" alt="Deminisis preview"/>
+        </div>
+        <div class="project-card-content">
+          <h3 class="project-card-title">Deminisis</h3>
+          <p class="project-card-desc">Astellius and the crew face surreal fragments of memory. Layered UI, glossary system, and original soundtrack.</p>
+          <p class="project-card-author">Created by: <span>SirGrantham</span></p>
+          <div class="project-card-tags">
+            <span class="tech-tag">Ren'Py</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Custom Systems</span>
+          </div>
+          <a class="project-card-btn disabled" href="#" onclick="return false;">
+            <i class="fas fa-clock"></i> Coming Soon
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE SECTION -->
+  <section id="experience" class="page-section">
+    <div class="section-header">
+      <h1>Experience</h1>
+      <div class="section-underline"></div>
+    </div>
+
+    <div class="card" style="margin-bottom: 16px;">
+      <h2 class="section-title" style="margin-top:0">Professional Experience</h2>
+      <div class="experience-item">
+        <div class="exp-header">
+          <h3>Freelance Visual Novel Developer</h3>
+          <span class="exp-date">2022 - Present</span>
+        </div>
+        <ul class="exp-list">
+          <li>Developed visual novel games for various international clients using Ren'Py and Python.</li>
+          <li>Designed custom UI/UX systems for enhanced player engagement and intuitive navigation.</li>
+          <li>Implemented game mechanics, glossary systems, and interactive elements.</li>
+          <li>Collaborated with writers, artists, and musicians to deliver polished game experiences.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2 class="section-title" style="margin-top:0">Skills Highlight</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h4>Game Development</h4>
+          <p>Ren'Py, Python, Visual Scripting, Custom Mechanics</p>
+        </div>
+        <div class="skill-category">
+          <h4>UI/UX Design</h4>
+          <p>Interface Design, User Experience, Accessibility</p>
+        </div>
+        <div class="skill-category">
+          <h4>Tools</h4>
+          <p>Git, VS Code, Canva, Figma</p>
+        </div>
+        <div class="skill-category">
+          <h4>Soft Skills</h4>
+          <p>Communication, Collaboration, Problem Solving</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section id="services" class="page-section">
+    <div class="section-header">
+      <h1>Services</h1>
+      <div class="section-underline"></div>
+    </div>
+
+    <!-- ART SERVICES -->
+    <div class="services-category">
+      <h2 class="services-category-title"><i class="fas fa-palette"></i> Art Services</h2>
+      <div class="art-services-layout">
+        <div class="art-carousel">
+          <div class="art-carousel-container">
+            <img src="assets/LupArt_1.png" alt="Art Sample 1" class="art-carousel-image active" data-index="0"/>
+            <img src="assets/LupArt_2.png" alt="Art Sample 2" class="art-carousel-image" data-index="1"/>
+            <img src="assets/LupArt_3.png" alt="Art Sample 3" class="art-carousel-image" data-index="2"/>
+          </div>
+          <div class="art-carousel-nav">
+            <button class="art-carousel-btn prev" aria-label="Previous image">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="art-carousel-dots">
+              <span class="art-dot active" data-index="0"></span>
+              <span class="art-dot" data-index="1"></span>
+              <span class="art-dot" data-index="2"></span>
+            </div>
+            <button class="art-carousel-btn next" aria-label="Next image">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="art-service-info">
+          <div class="art-price-highlight">
+            <span class="art-price-label">Half Body Cell Shaded</span>
+            <span class="art-price-amount">$50</span>
+          </div>
+          <ul class="art-service-list">
+            <li>Halfbody Cell Shaded Art! Will also accept any specie NSFW or SFW!</li>
+            <li>Updates and drafts would be sent from time-to-time!</li>
+            <li>Final piece would be sent via Gmail/Gdrive</li>
+            <li>Must pay half the price (then pay the rest after) or full after the approved rough/draft</li>
+          </ul>
+          <a class="art-cta-btn" href="https://discord.gg/h6c6axsk" target="_blank" rel="noopener">
+            <i class="fab fa-discord"></i> Commission me on Discord
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- VN SERVICES -->
+    <div class="services-category">
+      <h2 class="services-category-title"><i class="fas fa-gamepad"></i> VN Services</h2>
+      <p class="services-category-subtitle">All prices are negotiable. Let's discuss your project!</p>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-card-images">
+            <img src="assets/Low_1.png" alt="Minor Role Sample 1" class="service-card-img active" data-index="0"/>
+            <img src="assets/Low_2.png" alt="Minor Role Sample 2" class="service-card-img" data-index="1"/>
+            <button class="service-img-arrow prev" aria-label="Previous image">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="service-img-arrow next" aria-label="Next image">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+          <div class="service-card-img-nav">
+            <span class="service-img-dot active" data-index="0"></span>
+            <span class="service-img-dot" data-index="1"></span>
+          </div>
+          <div class="service-icon">
+            <i class="fas fa-file-code"></i>
+          </div>
+          <h3 class="service-title">Minor Roles</h3>
+          <ul class="service-list">
+            <li>Docs to Ren'Py script conversion</li>
+            <li>Game testing & detailed feedback</li>
+            <li>Itch.io page setup & design</li>
+            <li>Discord server setup & moderation</li>
+          </ul>
+          <div class="service-price">
+            <span class="price-amount">$2 - $15</span>
+          </div>
+        </div>
+
+        <div class="service-card featured">
+          <div class="service-badge">Popular</div>
+          <div class="service-card-images">
+            <img src="assets/Feature_1.png" alt="Feature Sample 1" class="service-card-img active" data-index="0"/>
+            <img src="assets/Feature_2.png" alt="Feature Sample 2" class="service-card-img" data-index="1"/>
+            <button class="service-img-arrow prev" aria-label="Previous image">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="service-img-arrow next" aria-label="Next image">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+          <div class="service-card-img-nav">
+            <span class="service-img-dot active" data-index="0"></span>
+            <span class="service-img-dot" data-index="1"></span>
+          </div>
+          <div class="service-icon">
+            <i class="fas fa-puzzle-piece"></i>
+          </div>
+          <h3 class="service-title">Feature Implementation</h3>
+          <ul class="service-list">
+            <li>Add feature to your game</li>
+            <li>Sprite animation presets, Galleries, Music Room, etc.</li>
+            <li>Price varies depending on complexity</li>
+          </ul>
+          <div class="service-price">
+            <span class="price-amount">$25 - $50</span>
+          </div>
+        </div>
+
+        <div class="service-card no-nav">
+          <div class="service-card-images">
+            <img src="assets/VN(4).jpg" alt="VN Template Sample" class="service-card-img active" data-index="0"/>
+          </div>
+          <div class="service-icon">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <h3 class="service-title">Visual Novel Creation</h3>
+          <ul class="service-list">
+            <li>Complete VN template with custom UI</li>
+            <li>3 features of your choice included</li>
+            <li>RPG & Turn-Based VN support available</li>
+          </ul>
+          <div class="service-price">
+            <span class="price-amount">$125+</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="services-cta">
+      <p>Ready to bring your visual novel to life?</p>
+      <a class="services-cta-btn" href="https://discord.gg/h6c6axsk" target="_blank" rel="noopener">
+        <i class="fab fa-discord"></i> Let's Talk on Discord
+      </a>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="page-section">
+    <div class="section-header">
+      <h1>Contact Me</h1>
+      <div class="section-underline"></div>
+    </div>
+
+    <div class="contact-grid">
+      <a href="https://bsky.app/profile/lupusseiza46.bsky.social" target="_blank" rel="noopener" class="contact-card bluesky">
+        <div class="contact-card-icon">
+          <i class="fas fa-cloud"></i>
+        </div>
+        <div class="contact-card-info">
+          <h3>Bluesky</h3>
+          <span>lupusseiza46.bsky.social</span>
+        </div>
+        <i class="fas fa-arrow-right contact-arrow"></i>
+      </a>
+
+      <a href="https://mail.google.com/mail/?view=cm&to=lupusseiza46@gmail.com" target="_blank" rel="noopener" class="contact-card gmail">
+        <div class="contact-card-icon">
+          <i class="fas fa-envelope"></i>
+        </div>
+        <div class="contact-card-info">
+          <h3>Email</h3>
+          <span>lupusseiza46@gmail.com</span>
+        </div>
+        <i class="fas fa-arrow-right contact-arrow"></i>
+      </a>
+
+      <a href="https://discord.gg/h6c6axsk" target="_blank" rel="noopener" class="contact-card discord">
+        <div class="contact-card-icon">
+          <i class="fab fa-discord"></i>
+        </div>
+        <div class="contact-card-info">
+          <h3>Discord</h3>
+          <span>lupusseiza46</span>
+        </div>
+        <i class="fas fa-arrow-right contact-arrow"></i>
+      </a>
+
+      <a href="#" onclick="openAgeWarning(event)" class="contact-card twitter">
+        <div class="contact-card-icon">
+          <i class="fab fa-x-twitter"></i>
+        </div>
+        <div class="contact-card-info">
+          <h3>X / Twitter</h3>
+          <span>@LupusSeiza46</span>
+        </div>
+        <i class="fas fa-arrow-right contact-arrow"></i>
+      </a>
+    </div>
+  </section>
+
+<!-- Age Warning Modal -->
+<div class="age-modal" id="ageModal">
+  <div class="age-modal-content">
+    <div class="age-modal-icon">
+      <i class="fas fa-exclamation-triangle"></i>
+    </div>
+    <h2>Content Warning</h2>
+    <p>This X/Twitter account contains <strong>18+ mature content</strong> including adult artwork and themes.</p>
+    <p class="age-modal-subtitle">By proceeding, you confirm that you are at least 18 years old.</p>
+    <div class="age-modal-buttons">
+      <button class="age-modal-btn cancel" onclick="closeAgeWarning()">Go Back</button>
+      <a href="https://x.com/LupusSeiza46" target="_blank" rel="noopener" class="age-modal-btn proceed" onclick="closeAgeWarning()">I'm 18+, Continue</a>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  <div class="container">
+    <p class="footer-copy">&copy; 2025 created by LupusSeiza46</p>
+  </div>
+</div>
+
+<!-- Lightbox Modal -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+  <img class="lightbox-img" id="lightbox-img" src="" alt="Enlarged view"/>
+  <p class="lightbox-caption" id="lightbox-caption"></p>
+</div>
+
+<!-- Shooting Stars -->
+<div class="shooting-stars">
+  <span class="shooting-star"></span>
+  <span class="shooting-star"></span>
+</div>
+
+<!-- Twinkling Stars -->
+<div class="twinkle-stars">
+  <span class="twinkle-star" style="top: 5%; left: 8%;"></span>
+  <span class="twinkle-star" style="top: 12%; left: 25%;"></span>
+  <span class="twinkle-star" style="top: 8%; left: 45%;"></span>
+  <span class="twinkle-star" style="top: 15%; left: 68%;"></span>
+  <span class="twinkle-star" style="top: 6%; left: 85%;"></span>
+  <span class="twinkle-star" style="top: 22%; left: 12%;"></span>
+  <span class="twinkle-star" style="top: 28%; left: 35%;"></span>
+  <span class="twinkle-star" style="top: 25%; left: 55%;"></span>
+  <span class="twinkle-star" style="top: 20%; left: 78%;"></span>
+  <span class="twinkle-star" style="top: 32%; left: 5%;"></span>
+  <span class="twinkle-star" style="top: 38%; left: 22%;"></span>
+  <span class="twinkle-star" style="top: 35%; left: 48%;"></span>
+  <span class="twinkle-star" style="top: 40%; left: 72%;"></span>
+  <span class="twinkle-star" style="top: 33%; left: 92%;"></span>
+  <span class="twinkle-star" style="top: 48%; left: 15%;"></span>
+  <span class="twinkle-star" style="top: 52%; left: 38%;"></span>
+  <span class="twinkle-star" style="top: 45%; left: 62%;"></span>
+  <span class="twinkle-star" style="top: 55%; left: 85%;"></span>
+  <span class="twinkle-star" style="top: 58%; left: 8%;"></span>
+  <span class="twinkle-star" style="top: 65%; left: 28%;"></span>
+  <span class="twinkle-star" style="top: 62%; left: 52%;"></span>
+  <span class="twinkle-star" style="top: 68%; left: 75%;"></span>
+  <span class="twinkle-star" style="top: 60%; left: 95%;"></span>
+  <span class="twinkle-star" style="top: 75%; left: 18%;"></span>
+  <span class="twinkle-star" style="top: 72%; left: 42%;"></span>
+  <span class="twinkle-star" style="top: 78%; left: 65%;"></span>
+  <span class="twinkle-star" style="top: 70%; left: 88%;"></span>
+  <span class="twinkle-star" style="top: 85%; left: 5%;"></span>
+  <span class="twinkle-star" style="top: 82%; left: 32%;"></span>
+  <span class="twinkle-star" style="top: 88%; left: 55%;"></span>
+  <span class="twinkle-star" style="top: 80%; left: 78%;"></span>
+  <span class="twinkle-star" style="top: 92%; left: 22%;"></span>
+  <span class="twinkle-star" style="top: 95%; left: 48%;"></span>
+  <span class="twinkle-star" style="top: 90%; left: 72%;"></span>
+  <span class="twinkle-star" style="top: 93%; left: 92%;"></span>
+</div>
+
+<!-- JavaScript -->
+<script>
+  // Lightbox Functionality
+  document.querySelectorAll('.gallery-item img, .project-card-media img, .project-card-image img, .service-card-img').forEach(img => {
+    img.style.cursor = 'zoom-in';
+    img.onclick = function() {
+      openLightbox(this.src, this.alt);
+    };
+  });
+
+  // Art Carousel Lightbox - opens the currently active image
+  const artCarouselContainer = document.querySelector('.art-carousel-container');
+  if (artCarouselContainer) {
+    artCarouselContainer.addEventListener('click', function() {
+      const activeImg = this.querySelector('.art-carousel-image.active');
+      if (activeImg) {
+        openLightbox(activeImg.src, activeImg.alt);
+      }
+    });
+  }
+
+  function openLightbox(src, alt) {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxCaption = document.getElementById('lightbox-caption');
+    lightboxImg.src = src;
+    lightboxCaption.textContent = alt;
+    lightbox.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    const lightbox = document.getElementById('lightbox');
+    lightbox.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  document.getElementById('lightbox').onclick = function(e) {
+    if (e.target === this) {
+      closeLightbox();
+    }
+  };
+
+  // Mobile Navigation Toggle
+  const navToggle = document.querySelector('.nav-toggle');
+  const navLinks = document.querySelector('.links');
+  const navOverlay = document.querySelector('.nav-overlay');
+
+  function closeMobileNav() {
+    navToggle.classList.remove('active');
+    navLinks.classList.remove('active');
+    navOverlay.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  navToggle.addEventListener('click', function() {
+    this.classList.toggle('active');
+    navLinks.classList.toggle('active');
+    navOverlay.classList.toggle('active');
+    if (navLinks.classList.contains('active')) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+  });
+
+  navOverlay.addEventListener('click', closeMobileNav);
+
+  // Smooth Scroll for Anchor Links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      closeMobileNav();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    });
+  });
+
+  // Active Navigation Link on Scroll
+  const sections = document.querySelectorAll('section[id]');
+  const allNavLinks = document.querySelectorAll('.links a[href^="#"]');
+
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 100;
+      if (scrollY >= sectionTop) {
+        current = section.getAttribute('id');
+      }
+    });
+
+    allNavLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === '#' + current) {
+        link.classList.add('active');
+      }
+    });
+  });
+
+  // Theme Toggle (Dark/Light Mode)
+  const themeToggleBtn = document.getElementById('themeToggleBtn');
+  const html = document.documentElement;
+
+  const savedTheme = localStorage.getItem('theme') || 'dark';
+  html.setAttribute('data-theme', savedTheme);
+
+  themeToggleBtn.addEventListener('click', () => {
+    const currentTheme = html.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    html.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+  });
+
+  // Keyboard Shortcuts
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      closeLightbox();
+      closeMobileNav();
+      closeAgeWarning();
+    }
+  });
+
+  // Age Warning Modal
+  function openAgeWarning(e) {
+    e.preventDefault();
+    document.getElementById('ageModal').classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeAgeWarning() {
+    document.getElementById('ageModal').classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  document.getElementById('ageModal').addEventListener('click', function(e) {
+    if (e.target === this) {
+      closeAgeWarning();
+    }
+  });
+
+  // Art Carousel
+  const artCarousel = document.querySelector('.art-carousel');
+  if (artCarousel) {
+    const images = artCarousel.querySelectorAll('.art-carousel-image');
+    const dots = artCarousel.querySelectorAll('.art-dot');
+    const prevBtn = artCarousel.querySelector('.art-carousel-btn.prev');
+    const nextBtn = artCarousel.querySelector('.art-carousel-btn.next');
+    let currentIndex = 0;
+
+    function showImage(index) {
+      images.forEach((img, i) => {
+        img.classList.toggle('active', i === index);
+      });
+      dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === index);
+      });
+      currentIndex = index;
+    }
+
+    prevBtn.addEventListener('click', () => {
+      let newIndex = currentIndex - 1;
+      if (newIndex < 0) newIndex = images.length - 1;
+      showImage(newIndex);
+    });
+
+    nextBtn.addEventListener('click', () => {
+      let newIndex = currentIndex + 1;
+      if (newIndex >= images.length) newIndex = 0;
+      showImage(newIndex);
+    });
+
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => {
+        showImage(index);
+      });
+    });
+  }
+
+  // Service Card Image Switchers
+  document.querySelectorAll('.service-card').forEach(card => {
+    const images = card.querySelectorAll('.service-card-img');
+    const dots = card.querySelectorAll('.service-img-dot');
+    const prevBtn = card.querySelector('.service-img-arrow.prev');
+    const nextBtn = card.querySelector('.service-img-arrow.next');
+    let currentIndex = 0;
+
+    function showImage(index) {
+      if (index < 0) index = images.length - 1;
+      if (index >= images.length) index = 0;
+      currentIndex = index;
+      images.forEach((img, i) => {
+        img.classList.toggle('active', i === index);
+      });
+      dots.forEach((d, i) => {
+        d.classList.toggle('active', i === index);
+      });
+    }
+
+    if (images.length > 0 && dots.length > 0) {
+      dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => showImage(index));
+      });
+    }
+
+    if (prevBtn) {
+      prevBtn.addEventListener('click', () => showImage(currentIndex - 1));
+    }
+
+    if (nextBtn) {
+      nextBtn.addEventListener('click', () => showImage(currentIndex + 1));
+    }
+  });
+</script>
+
+</body>
+</html>
