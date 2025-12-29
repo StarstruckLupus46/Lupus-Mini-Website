@@ -132,8 +132,18 @@
       <div class="section-underline"></div>
     </div>
 
-    <div class="projects-grid">
-      <!-- PROJECT 1: To Find Yourself -->
+    <div class="projects-carousel-container">
+      <div class="projects-nav">
+        <button class="projects-arrow projects-arrow-left" onclick="scrollProjects(-1)">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <span class="projects-counter"><span id="projectCurrent">1</span> / <span id="projectTotal">5</span></span>
+        <button class="projects-arrow projects-arrow-right" onclick="scrollProjects(1)">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+      <div class="projects-grid">
+        <!-- PROJECT 1: To Find Yourself -->
       <div class="project-card">
         <div class="project-card-image">
           <span class="status-badge completed">Published</span>
@@ -469,6 +479,17 @@
         <i class="fas fa-arrow-right contact-arrow"></i>
       </a>
 
+      <a href="https://github.com/StarstruckLupus46" target="_blank" rel="noopener" class="contact-card github">
+        <div class="contact-card-icon">
+          <i class="fab fa-github"></i>
+        </div>
+        <div class="contact-card-info">
+          <h3>GitHub</h3>
+          <span>StarstruckLupus46</span>
+        </div>
+        <i class="fas fa-arrow-right contact-arrow"></i>
+      </a>
+
       <a href="#" onclick="openAgeWarning(event)" class="contact-card twitter">
         <div class="contact-card-icon">
           <i class="fab fa-x-twitter"></i>
@@ -685,6 +706,37 @@
       closeAgeWarning();
     }
   });
+
+  // Projects Carousel Scroll
+  const projectsGrid = document.querySelector('.projects-grid');
+  const projectCurrentEl = document.getElementById('projectCurrent');
+  const projectTotalEl = document.getElementById('projectTotal');
+  const projectCards = document.querySelectorAll('.projects-grid .project-card');
+
+  if (projectTotalEl && projectCards.length) {
+    projectTotalEl.textContent = projectCards.length;
+  }
+
+  function scrollProjects(direction) {
+    if (projectsGrid) {
+      const card = projectsGrid.querySelector('.project-card');
+      const cardWidth = card.offsetWidth + 16;
+      projectsGrid.scrollBy({ left: direction * cardWidth, behavior: 'smooth' });
+    }
+  }
+
+  function updateProjectCounter() {
+    if (projectsGrid && projectCurrentEl) {
+      const scrollLeft = projectsGrid.scrollLeft;
+      const cardWidth = projectsGrid.querySelector('.project-card').offsetWidth + 16;
+      const currentIndex = Math.round(scrollLeft / cardWidth) + 1;
+      projectCurrentEl.textContent = currentIndex;
+    }
+  }
+
+  if (projectsGrid) {
+    projectsGrid.addEventListener('scroll', updateProjectCounter);
+  }
 
   // Age Warning Modal
   function openAgeWarning(e) {
