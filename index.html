@@ -62,12 +62,32 @@
 <!-- Main Content -->
 <div class="container">
 
-  <!-- HOME SECTION -->
-  <section id="home" class="hero centered">
-    <div>
-      <h1>Welcome to My Portfolio</h1>
-      <p><i>"I will make the stars align."</i></p>
-      <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center">
+  <!-- HOME/HERO SECTION -->
+  <section id="home" class="hero-section">
+    <div class="hero-content">
+      <div class="hero-text">
+        <span class="hero-greeting">Hi, I am</span>
+        <h1 class="hero-name">
+          Lupus Okami Seiza
+          <span class="name-sparkle name-sparkle-1"></span>
+          <span class="name-sparkle name-sparkle-2"></span>
+          <span class="name-sparkle name-sparkle-3"></span>
+          <span class="name-sparkle name-sparkle-4"></span>
+        </h1>
+        <p class="hero-role">A <span class="role-text" id="roleText">Visual Novel Developer</span><span class="role-cursor">|</span></p>
+        <p class="hero-description">A passionate Visual Novel Developer specializing in Ren'Py game development. I also assist in designing for UI/UX, programming custom game mechanics, and help in polishing visual novels.</p>
+      </div>
+      <div class="hero-image">
+        <div class="hero-photo-container">
+          <span class="photo-message" id="photoMessage"></span>
+          <div class="hero-photo-wrapper" id="heroPhoto">
+            <img src="assets/LupArt.jpg" alt="LupusSeiza46"/>
+            <span class="sparkle sparkle-1"></span>
+            <span class="sparkle sparkle-2"></span>
+            <span class="sparkle sparkle-3"></span>
+            <span class="sparkle sparkle-4"></span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -75,20 +95,6 @@
   <!-- ABOUT SECTION -->
   <section id="about" class="page-section">
     <div class="about-card">
-      <div class="about-header">
-        <div class="about-photo">
-          <img src="assets/LupArt.jpg" alt="LupusSeiza46"/>
-          <span class="sparkle sparkle-1"></span>
-          <span class="sparkle sparkle-2"></span>
-          <span class="sparkle sparkle-3"></span>
-          <span class="sparkle sparkle-4"></span>
-        </div>
-        <div class="about-header-text">
-          <h2>Hi! I'm LupusSeiza46</h2>
-          <p class="about-intro">A passionate Visual Novel Developer specializing in Ren’Py game development. I also assist in designing for UI/UX, programming custom game mechanics, and help in polishing visual novels.'</p>
-        </div>
-      </div>
-
       <div class="about-section">
         <h3>What I Do</h3>
         <div class="about-grid-new">
@@ -132,18 +138,8 @@
       <div class="section-underline"></div>
     </div>
 
-    <div class="projects-carousel-container">
-      <div class="projects-nav">
-        <button class="projects-arrow projects-arrow-left" onclick="scrollProjects(-1)">
-          <i class="fas fa-chevron-left"></i>
-        </button>
-        <span class="projects-counter"><span id="projectCurrent">1</span> / <span id="projectTotal">5</span></span>
-        <button class="projects-arrow projects-arrow-right" onclick="scrollProjects(1)">
-          <i class="fas fa-chevron-right"></i>
-        </button>
-      </div>
-      <div class="projects-grid">
-        <!-- PROJECT 1: To Find Yourself -->
+    <div class="projects-grid">
+      <!-- PROJECT 1: To Find Yourself -->
       <div class="project-card">
         <div class="project-card-image">
           <span class="status-badge completed">Published</span>
@@ -238,14 +234,30 @@
           <p class="project-card-author">Created by: <span>SirGrantham</span></p>
           <div class="project-card-tags">
             <span class="tech-tag">Ren'Py</span>
-            <span class="tech-tag">Python</span>
-            <span class="tech-tag">Custom Systems</span>
+            <span class="tech-tag">Custom Features</span>
           </div>
           <a class="project-card-btn disabled" href="#" onclick="return false;">
             <i class="fas fa-clock"></i> Coming Soon
           </a>
         </div>
       </div>
+    </div>
+
+    <!-- Mobile Carousel Navigation -->
+    <div class="projects-carousel-nav">
+      <button class="projects-carousel-btn prev" aria-label="Previous project">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <div class="projects-carousel-dots">
+        <button class="projects-carousel-dot active" data-index="0" aria-label="Go to project 1"></button>
+        <button class="projects-carousel-dot" data-index="1" aria-label="Go to project 2"></button>
+        <button class="projects-carousel-dot" data-index="2" aria-label="Go to project 3"></button>
+        <button class="projects-carousel-dot" data-index="3" aria-label="Go to project 4"></button>
+        <button class="projects-carousel-dot" data-index="4" aria-label="Go to project 5"></button>
+      </div>
+      <button class="projects-carousel-btn next" aria-label="Next project">
+        <i class="fas fa-chevron-right"></i>
+      </button>
     </div>
   </section>
 
@@ -256,40 +268,57 @@
       <div class="section-underline"></div>
     </div>
 
-    <div class="card" style="margin-bottom: 16px;">
-      <h2 class="section-title" style="margin-top:0">Professional Experience</h2>
-      <div class="experience-item">
-        <div class="exp-header">
+    <div class="experience-layout">
+      <!-- Experience Card -->
+      <div class="experience-card">
+        <div class="experience-header">
           <h3>Freelance Visual Novel Developer</h3>
-          <span class="exp-date">2022 - Present</span>
+          <span class="experience-date">2022 - Present</span>
         </div>
-        <ul class="exp-list">
-          <li>Developed visual novel games for various international clients using Ren'Py and Python.</li>
-          <li>Designed custom UI/UX systems for enhanced player engagement and intuitive navigation.</li>
-          <li>Implemented game mechanics, glossary systems, and interactive elements.</li>
-          <li>Collaborated with writers, artists, and musicians to deliver polished game experiences.</li>
+        <ul class="experience-list">
+          <li>Developed visual novel games for international clients using Ren'Py and Python</li>
+          <li>Designed custom UI/UX systems for enhanced player engagement</li>
+          <li>Implemented game mechanics, glossary systems, and interactive elements</li>
+          <li>Collaborated with writers, artists, and musicians</li>
         </ul>
       </div>
-    </div>
 
-    <div class="card">
-      <h2 class="section-title" style="margin-top:0">Skills Highlight</h2>
-      <div class="skills-grid">
-        <div class="skill-category">
-          <h4>Game Development</h4>
-          <p>Ren'Py, Python, Visual Scripting, Custom Mechanics</p>
-        </div>
-        <div class="skill-category">
-          <h4>UI/UX Design</h4>
-          <p>Interface Design, User Experience, Accessibility</p>
-        </div>
-        <div class="skill-category">
-          <h4>Tools</h4>
-          <p>Git, VS Code, Canva, Figma</p>
-        </div>
-        <div class="skill-category">
-          <h4>Soft Skills</h4>
-          <p>Communication, Collaboration, Problem Solving</p>
+      <!-- Skills Card -->
+      <div class="skills-card">
+        <h3 class="skills-title">Skills & Tools</h3>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <span class="skill-label">Development Languages</span>
+            <div class="skill-pills">
+              <span class="skill-pill">Python</span>
+              <span class="skill-pill">JavaScript</span>
+              <span class="skill-pill">HTML/CSS</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <span class="skill-label">Design Skills</span>
+            <div class="skill-pills">
+              <span class="skill-pill">UI/UX</span>
+              <span class="skill-pill">Figma</span>
+              <span class="skill-pill">Canva</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <span class="skill-label">Tools Known</span>
+            <div class="skill-pills">
+              <span class="skill-pill">Git</span>
+              <span class="skill-pill">VS Code</span>
+              <span class="skill-pill">Discord</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <span class="skill-label">Game Engines</span>
+            <div class="skill-pills">
+              <span class="skill-pill">Renpy</span>
+              <span class="skill-pill">Unity</span>
+              <span class="skill-pill">Godot</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -354,16 +383,18 @@
           <div class="service-card-images">
             <img src="assets/Low_1.png" alt="Minor Role Sample 1" class="service-card-img active" data-index="0"/>
             <img src="assets/Low_2.png" alt="Minor Role Sample 2" class="service-card-img" data-index="1"/>
+          </div>
+          <div class="service-card-img-nav">
             <button class="service-img-arrow prev" aria-label="Previous image">
               <i class="fas fa-chevron-left"></i>
             </button>
+            <div class="service-img-dots">
+              <span class="service-img-dot active" data-index="0"></span>
+              <span class="service-img-dot" data-index="1"></span>
+            </div>
             <button class="service-img-arrow next" aria-label="Next image">
               <i class="fas fa-chevron-right"></i>
             </button>
-          </div>
-          <div class="service-card-img-nav">
-            <span class="service-img-dot active" data-index="0"></span>
-            <span class="service-img-dot" data-index="1"></span>
           </div>
           <div class="service-icon">
             <i class="fas fa-file-code"></i>
@@ -373,7 +404,7 @@
             <li>Docs to Ren'Py script conversion</li>
             <li>Game testing & detailed feedback</li>
             <li>Itch.io page setup & design</li>
-            <li>Discord server setup & moderation</li>
+            <li>Discord server setup</li>
           </ul>
           <div class="service-price">
             <span class="price-amount">$2 - $15</span>
@@ -385,16 +416,18 @@
           <div class="service-card-images">
             <img src="assets/Feature_1.png" alt="Feature Sample 1" class="service-card-img active" data-index="0"/>
             <img src="assets/Feature_2.png" alt="Feature Sample 2" class="service-card-img" data-index="1"/>
+          </div>
+          <div class="service-card-img-nav">
             <button class="service-img-arrow prev" aria-label="Previous image">
               <i class="fas fa-chevron-left"></i>
             </button>
+            <div class="service-img-dots">
+              <span class="service-img-dot active" data-index="0"></span>
+              <span class="service-img-dot" data-index="1"></span>
+            </div>
             <button class="service-img-arrow next" aria-label="Next image">
               <i class="fas fa-chevron-right"></i>
             </button>
-          </div>
-          <div class="service-card-img-nav">
-            <span class="service-img-dot active" data-index="0"></span>
-            <span class="service-img-dot" data-index="1"></span>
           </div>
           <div class="service-icon">
             <i class="fas fa-puzzle-piece"></i>
@@ -430,29 +463,27 @@
       </div>
     </div>
 
-    <div class="services-cta">
-      <p>Ready to bring your visual novel to life?</p>
-      <a class="services-cta-btn" href="https://discord.gg/h6c6axsk" target="_blank" rel="noopener">
-        <i class="fab fa-discord"></i> Let's Talk on Discord
-      </a>
-    </div>
   </section>
 
   <!-- CONTACT SECTION -->
   <section id="contact" class="page-section">
     <div class="section-header">
-      <h1>Contact Me</h1>
+      <h1>Let's Connect</h1>
       <div class="section-underline"></div>
     </div>
 
     <div class="contact-grid">
-      <a href="https://bsky.app/profile/lupusseiza46.bsky.social" target="_blank" rel="noopener" class="contact-card bluesky">
+      <a href="https://discord.gg/h6c6axsk" target="_blank" rel="noopener" class="contact-card discord preferred">
+        <span class="sparkle sparkle-1"></span>
+        <span class="sparkle sparkle-2"></span>
+        <span class="sparkle sparkle-3"></span>
+        <span class="sparkle sparkle-4"></span>
         <div class="contact-card-icon">
-          <i class="fas fa-cloud"></i>
+          <i class="fab fa-discord"></i>
         </div>
         <div class="contact-card-info">
-          <h3>Bluesky</h3>
-          <span>lupusseiza46.bsky.social</span>
+          <h3>Discord</h3>
+          <span>lupusseiza46</span>
         </div>
         <i class="fas fa-arrow-right contact-arrow"></i>
       </a>
@@ -468,13 +499,13 @@
         <i class="fas fa-arrow-right contact-arrow"></i>
       </a>
 
-      <a href="https://discord.gg/h6c6axsk" target="_blank" rel="noopener" class="contact-card discord">
+      <a href="https://bsky.app/profile/lupusseiza46.bsky.social" target="_blank" rel="noopener" class="contact-card bluesky">
         <div class="contact-card-icon">
-          <i class="fab fa-discord"></i>
+          <i class="fas fa-cloud"></i>
         </div>
         <div class="contact-card-info">
-          <h3>Discord</h3>
-          <span>lupusseiza46</span>
+          <h3>Bluesky</h3>
+          <span>lupusseiza46.bsky.social</span>
         </div>
         <i class="fas fa-arrow-right contact-arrow"></i>
       </a>
@@ -490,7 +521,9 @@
         <i class="fas fa-arrow-right contact-arrow"></i>
       </a>
 
-      <a href="#" onclick="openAgeWarning(event)" class="contact-card twitter">
+      <a href="#" onclick="openAgeWarning(event)" class="contact-card twitter fading">
+        <div class="shatter shatter-1"></div>
+        <div class="shatter shatter-2"></div>
         <div class="contact-card-icon">
           <i class="fab fa-x-twitter"></i>
         </div>
@@ -707,46 +740,17 @@
     }
   });
 
-  // Projects Carousel Scroll
-  const projectsGrid = document.querySelector('.projects-grid');
-  const projectCurrentEl = document.getElementById('projectCurrent');
-  const projectTotalEl = document.getElementById('projectTotal');
-  const projectCards = document.querySelectorAll('.projects-grid .project-card');
-
-  if (projectTotalEl && projectCards.length) {
-    projectTotalEl.textContent = projectCards.length;
-  }
-
-  function scrollProjects(direction) {
-    if (projectsGrid) {
-      const card = projectsGrid.querySelector('.project-card');
-      const cardWidth = card.offsetWidth + 16;
-      projectsGrid.scrollBy({ left: direction * cardWidth, behavior: 'smooth' });
-    }
-  }
-
-  function updateProjectCounter() {
-    if (projectsGrid && projectCurrentEl) {
-      const scrollLeft = projectsGrid.scrollLeft;
-      const cardWidth = projectsGrid.querySelector('.project-card').offsetWidth + 16;
-      const currentIndex = Math.round(scrollLeft / cardWidth) + 1;
-      projectCurrentEl.textContent = currentIndex;
-    }
-  }
-
-  if (projectsGrid) {
-    projectsGrid.addEventListener('scroll', updateProjectCounter);
-  }
-
   // Age Warning Modal
   function openAgeWarning(e) {
     e.preventDefault();
     document.getElementById('ageModal').classList.add('active');
+    document.querySelector('.footer').style.visibility = 'hidden';
     document.body.style.overflow = 'hidden';
   }
 
   function closeAgeWarning() {
     document.getElementById('ageModal').classList.remove('active');
+    document.querySelector('.footer').style.visibility = '';
     document.body.style.overflow = '';
   }
 
@@ -828,6 +832,190 @@
       nextBtn.addEventListener('click', () => showImage(currentIndex + 1));
     }
   });
+
+  // Role Text Typing Animation
+  const roles = [
+    'Visual Novel Developer',
+    'UI/UX Assistant',
+    'Game Tester',
+    'Ren\'Py Specialist',
+    'Creative Director'
+  ];
+
+  const roleText = document.getElementById('roleText');
+  let roleIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+  let typingSpeed = 100;
+
+  function typeRole() {
+    const currentRole = roles[roleIndex];
+
+    if (isDeleting) {
+      roleText.textContent = currentRole.substring(0, charIndex - 1);
+      charIndex--;
+      typingSpeed = 50;
+    } else {
+      roleText.textContent = currentRole.substring(0, charIndex + 1);
+      charIndex++;
+      typingSpeed = 100;
+    }
+
+    if (!isDeleting && charIndex === currentRole.length) {
+      typingSpeed = 2000;
+      isDeleting = true;
+    } else if (isDeleting && charIndex === 0) {
+      isDeleting = false;
+      roleIndex = (roleIndex + 1) % roles.length;
+      typingSpeed = 500;
+    }
+
+    setTimeout(typeRole, typingSpeed);
+  }
+
+  typeRole();
+
+  // Photo Click Messages
+  const photoMessages = [
+    "You're persistent, aren't you?"
+  ];
+
+  // Hold/Stretch Messages
+  const holdMessages = [
+    "AHHHHHHH",
+  ];
+
+  const heroPhoto = document.getElementById('heroPhoto');
+  const photoMessage = document.getElementById('photoMessage');
+  let messageTimeout;
+  let holdTimeout;
+  let isHolding = false;
+  let holdStartTime = 0;
+
+  function showClickMessage() {
+    const randomMessage = photoMessages[Math.floor(Math.random() * photoMessages.length)];
+    photoMessage.textContent = randomMessage;
+    photoMessage.classList.add('show');
+
+    // Trigger bounce animation
+    heroPhoto.classList.remove('bounce');
+    void heroPhoto.offsetWidth;
+    heroPhoto.classList.add('bounce');
+
+    clearTimeout(messageTimeout);
+    messageTimeout = setTimeout(() => {
+      photoMessage.classList.remove('show');
+    }, 2000);
+  }
+
+  function showHoldMessage() {
+    const randomHoldMessage = holdMessages[Math.floor(Math.random() * holdMessages.length)];
+    photoMessage.textContent = randomHoldMessage;
+    photoMessage.classList.add('show', 'hold-style');
+  }
+
+  function handleStart(e) {
+    if (e.type === 'mousedown' && e.button !== 0) return; // Only left click
+    e.preventDefault();
+    e.stopPropagation();
+
+    if (holdStartTime > 0) return; // Already started
+    holdStartTime = Date.now();
+
+    clearTimeout(holdTimeout);
+    holdTimeout = setTimeout(() => {
+      isHolding = true;
+      heroPhoto.classList.add('stretched');
+      showHoldMessage();
+    }, 300);
+  }
+
+  function handleEnd(e) {
+    if (holdStartTime === 0) return; // Not started on photo
+
+    clearTimeout(holdTimeout);
+    const holdDuration = Date.now() - holdStartTime;
+
+    if (isHolding) {
+      // Was holding - release stretch
+      isHolding = false;
+      heroPhoto.classList.remove('stretched');
+      photoMessage.classList.remove('show', 'hold-style');
+    } else if (holdDuration < 300) {
+      // Quick tap - show bounce + message
+      showClickMessage();
+    }
+
+    holdStartTime = 0;
+  }
+
+  // Desktop - use mousedown on wrapper, mouseup on document
+  heroPhoto.addEventListener('mousedown', handleStart, false);
+  document.addEventListener('mouseup', handleEnd, false);
+
+  // Mobile
+  heroPhoto.addEventListener('touchstart', handleStart, { passive: false });
+  document.addEventListener('touchend', handleEnd, { passive: false });
+  document.addEventListener('touchcancel', handleEnd, { passive: false });
+
+  // Prevent context menu on long press
+  heroPhoto.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+  });
+
+  // Projects Carousel (Mobile)
+  const projectsGrid = document.querySelector('.projects-grid');
+  const projectCards = document.querySelectorAll('.projects-grid .project-card');
+  const carouselDots = document.querySelectorAll('.projects-carousel-dot');
+  const carouselPrevBtn = document.querySelector('.projects-carousel-btn.prev');
+  const carouselNextBtn = document.querySelector('.projects-carousel-btn.next');
+  let currentProjectIndex = 0;
+
+  if (projectsGrid && projectCards.length > 0 && carouselDots.length > 0) {
+    function getCardWidth() {
+      return projectCards[0].offsetWidth + 16; // card width + gap
+    }
+
+    function scrollToProject(index) {
+      if (index < 0) index = projectCards.length - 1;
+      if (index >= projectCards.length) index = 0;
+      currentProjectIndex = index;
+      projectsGrid.scrollTo({
+        left: getCardWidth() * index,
+        behavior: 'smooth'
+      });
+    }
+
+    // Update dots on scroll
+    projectsGrid.addEventListener('scroll', function() {
+      const scrollLeft = projectsGrid.scrollLeft;
+      currentProjectIndex = Math.round(scrollLeft / getCardWidth());
+
+      carouselDots.forEach((dot, index) => {
+        dot.classList.toggle('active', index === currentProjectIndex);
+      });
+    });
+
+    // Click on dot to scroll to card
+    carouselDots.forEach((dot, index) => {
+      dot.addEventListener('click', function() {
+        scrollToProject(index);
+      });
+    });
+
+    // Arrow buttons
+    if (carouselPrevBtn) {
+      carouselPrevBtn.addEventListener('click', function() {
+        scrollToProject(currentProjectIndex - 1);
+      });
+    }
+
+    if (carouselNextBtn) {
+      carouselNextBtn.addEventListener('click', function() {
+        scrollToProject(currentProjectIndex + 1);
+      });
+    }
+  }
 </script>
 
 </body>
